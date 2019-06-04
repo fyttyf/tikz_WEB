@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for tag in allTag %}
+    <a href="{{ url_for('individual_tag', category = tag )}}">{{ tag }}</a>
+    <br>
+{% endfor %}
+</body>
+</html>
